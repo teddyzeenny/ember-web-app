@@ -62,6 +62,7 @@
     "broccoli-asset-rev": "^2.5.0",
     "broccoli-plugin": "^1.2.2",
     "ember-cli-babel": "^5.1.6",
+    "fs-extra": "^1.0.0",
     "object-assign": "^4.1.0",
     "web-app-manifest-validator": "^1.0.0"
   },

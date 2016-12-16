@@ -1,7 +1,7 @@
 /* jshint node: true */
 'use strict';
 
-var fs = require('fs');
+var fs = require('fs-extra');
 
 module.exports = {
   name: 'ember-web-app',
@@ -64,6 +64,6 @@ module.exports = {
   },
 
   postBuild(results) {
-    fs.renameSync(results.directory + '/' + require('./lib/constants').TEMP_MANIFEST, results.directory + '/manifest.json');
+    fs.copySync(results.directory + '/' + require('./lib/constants').TEMP_MANIFEST, results.directory + '/manifest.json');
   }
 };
